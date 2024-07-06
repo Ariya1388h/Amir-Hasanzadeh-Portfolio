@@ -9,6 +9,7 @@
 
 body {
     direction: rtl;
+    background-color: black;
     color: white;
 }
 
@@ -69,12 +70,24 @@ body {
     padding: 0 5%;
 }
 
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showLeft 1s ease forwards;
+    animation-delay: 3s;
+}
+
 .home-content {
     max-width: 500px;
 }
 
 .home-content h1 {
-    font-size: 40px;
+    font-size: 2rem;
     position: relative;
     font-weight: 700;
     line-height: 1.2;
@@ -82,7 +95,6 @@ body {
 
 .home-content h1::before {
     content: '';
-    direction: rtl;
     position: absolute;
     top: 0;
     left: 0;
@@ -191,7 +203,7 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 0;
     height: 100%;
     background: black;
@@ -261,23 +273,28 @@ body {
 .home-sci a:hover::before {
     width: 100%;
 }
+/* Responsivnes */
 
-.home-imgHover {
-    position: absolute;
-    top: 50px;
-    left: 80px;
-    width: 600px;
-    height: 100%;
-    background: transparent;
-    transition: 1s;
+
+@media(max-width: 750px){
+    .navbar a{
+        display: none;
+    }
+    .home-content {
+        max-width: 400px;
+    }
 }
 
-.home-imgHover:hover {
-    background: black;
-    opacity: 0.8;
+
+@media(max-width: 580px){
+    .home-content {
+        max-width: 300px;
+    }
 }
+
 
 /* Keyframes Animations */
+
 @keyframes showLeft {
     100% {
         width: 0;
