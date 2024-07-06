@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio ReDeisgn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">امیر حسن زاده</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">خانه</a>
+            <a href="#">درباره</a>
+            <a href="#">خدمات</a>
+            <a href="#">پورتوفولیو</a>
+            <a href="#">ارتباط</a>
+        </nav>
+
+        <a href="#" class="menu"><i class='bx bx-menu-alt-left'></i></a>
+        <nav class="navmenu">
+            <a href="#" class="close"><i class='bx bx-x'></i></a>
+            <a href="#">خانه</a>
+            <a href="#">درباره</a>
+            <a href="#">خدمات</a>
+            <a href="#">پورتوفولیو</a>
+            <a href="#">ارتباط</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>سلام،<br> من امیر حسن‌زاده هستم!</h1>
+            <h3>آهنگساز و مدرس موسیقی</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+            <div class="btn-box">
+                <a href="#">کار های من</a>
+                <a href="#">ارتباط با من</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-telegram'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu')
+        const toggleBtnIcon = document.querySelector('.navmenu a i')
+        const navMenu = document.querySelector('.navmenu')
+
+        toggleBtn.onclick = function () {
+            navMenu.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>
