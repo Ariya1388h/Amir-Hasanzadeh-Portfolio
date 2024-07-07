@@ -118,6 +118,7 @@ section {
 .home-img img {
     width: 32vw;
     border-radius: 50%;
+    margin-top: 60px;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
 }
@@ -246,7 +247,7 @@ section {
     color: var(--text-color);
 }
 
-.services-container {
+.service-box-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
