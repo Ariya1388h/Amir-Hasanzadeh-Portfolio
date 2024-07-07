@@ -3,9 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <a href="#home" class="logo">Amir <span>Hasanzadeh</span></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">خانه</a>
+            <a href="#about">درباره</a>
+            <a href="#services">خدمات</a>
+            <a href="#contact">ارتباط</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>سلام، من <span>امیر حسن‌زاده</span> هستم</h1>
+            <h3><span>آهنگساز و مدرس موسیقی</span></h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+
+            <div class="social-icons">
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-telegram' ></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+                <a href="#">
+                    <i class='bx bx-phone-call' ></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#contact" class="btn">ارتباط</a>
+                <a href="#" class="btn">رزومه</a>
+            </div>
+
+        </div>
+        <div class="home-img">
+            <img src="images/amir.jpg" alt="img">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/amir.jpg" alt="img">
+        </div>
+
+        <div class="about-content">
+            <h2>درباره <span>من</span></h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+            <a href="#" class="btn">بیشتر بخوانید</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">کلاس ها و خدمات</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bxs-music' ></i>
+                    <h4>لورم ایپسوم</h4>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی مامفهوم</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bxs-music' ></i>
+                    <h4>لورم ایپسوم</h4>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی مامفهوم</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bxs-music' ></i>
+                    <h4>لورم ایپسوم</h4>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی مامفهوم</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">ارتباط</h2>
+
+        <form action="">
+
+            <div class="input-group"></div>
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="subject">
+                </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-telegram' ></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-whatsapp' ></i>
+            </a>
+            <a href="#">
+                <i class='bx bx-phone-call' ></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">سوالات پرتکرار</a>
+            </li>
+            <li>
+                <a href="#services">خدمات</a>
+            </li>
+            <li>
+                <a href="#about">درباره من</a>
+            </li>
+            <li>
+                <a href="#contact">ارتباط</a>
+            </li>
+
+            <p class="copyright">
+                Website By Ariya Hasanzadeh
+            </p>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
