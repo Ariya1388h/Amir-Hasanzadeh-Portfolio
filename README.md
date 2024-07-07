@@ -1,1 +1,1 @@
-This is an early versin of the websiite, the new css fil after being completed will be published that upgrade the website by far.
+The css file still has some bugs but the website is almost complete.
