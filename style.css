@@ -365,6 +365,11 @@ section {
 }
 
 @media(max-width: 1024px) {
+
+    html {
+        font-size: 10px;
+    }
+
     #menu-icon {
         display: inline-block
     }
