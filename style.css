@@ -434,7 +434,7 @@ section {
 @keyframes appear {
     from {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(100px);
     }
     to {
         opacity: 1;
@@ -442,7 +442,7 @@ section {
     }
   }
 
-  .about-content, .input-group-2, .service-container-3 {
+  .about-img, .input-box, .service-container-1 {
         animation: appear linear;
         animation-timeline: view();
         animation-range: entry -20% cover 40%;
@@ -453,7 +453,7 @@ section {
 @keyframes appear2 {
         from {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(-100px);
     }
     to {
         opacity: 1;
@@ -461,7 +461,7 @@ section {
     }
   }
 
-  .about-img, .input-box, .service-container-1  {
+  .about-content, .input-group-2, .service-container-3 {
         animation: appear2 linear;
         animation-timeline: view();
         animation-range: entry -20% cover 40%;
