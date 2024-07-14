@@ -6,4 +6,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-gsap.from('header', { duration: 1, y: '-100%' })
+// GSAP
+
+gsap.from('header', { duration: 1, y: '-100%', ease: "power4.inOut"})
+gsap.from('.home', { duration: 1, y: '100%', delay: 1 })
