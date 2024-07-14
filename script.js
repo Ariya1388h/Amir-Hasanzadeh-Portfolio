@@ -5,3 +5,5 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+gsap.from('header', { duration: 1, y: '-100%' })
