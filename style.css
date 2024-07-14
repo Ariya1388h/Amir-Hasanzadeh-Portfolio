@@ -273,7 +273,7 @@ section {
     transform: scale(1.03);
 }
 
-.services-info {
+.service-info {
     display: flex;
     flex-direction: column;
     text-align: center;
