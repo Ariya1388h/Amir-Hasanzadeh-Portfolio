@@ -8,18 +8,6 @@ menuIcon.onclick = () => {
 
 // GSAP
 
-
-// let tl = gsap.timeline ({
-//     scrollTrigger: {
-//         trigger: 'about-img',
-//         start: '100vw center',
-//         end: 'bottom center',
-//         scrub: false,
-//         markers: true,
-//         toggleActions: 'play onLeave onEnterBack onLeaveBack'
-//     }
-// })
-
 gsap.registerPlugin(ScrollTrigger);
 
 // Home
