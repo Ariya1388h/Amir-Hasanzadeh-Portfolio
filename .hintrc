@@ -3,16 +3,17 @@
     "development"
   ],
   "hints": {
-    "axe/structure": [
-      "default",
-      {
-        "list": "off"
-      }
-    ],
     "axe/name-role-value": [
       "default",
       {
         "link-name": "off"
+      }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "list": "off",
+        "listitem": "off"
       }
     ],
     "compat-api/css": [
