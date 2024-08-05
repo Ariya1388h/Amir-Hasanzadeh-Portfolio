@@ -29,6 +29,18 @@ body {
     color: var(--text-color);
 }
 
+/* Gsap Dependencies */
+
+.social-icons a {
+    transform: translateX(100vw);
+}
+
+.btn-group a {
+    opacity: 0;
+}
+
+/* End Of Gsap Dependencies */
+
 header {
     position: fixed;
     width: 100%;
@@ -132,7 +144,6 @@ section {
 
 
 .social-icons a {
-    transform: translateX(100vw);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -155,10 +166,6 @@ section {
 .btn-group {
     display: flex;
     gap: 1.5rem;
-}
-
-.btn-group a {
-    transform: translateX(100vw);
 }
 
 .btn {
