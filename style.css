@@ -132,6 +132,7 @@ section {
 
 
 .social-icons a {
+    transform: translateX(100vw);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +155,10 @@ section {
 .btn-group {
     display: flex;
     gap: 1.5rem;
+}
+
+.btn-group a {
+    transform: translateX(100vw);
 }
 
 .btn {
