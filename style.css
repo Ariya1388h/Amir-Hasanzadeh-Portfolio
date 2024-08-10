@@ -36,11 +36,13 @@ body {
 }
 
 .btn-group a {
-    opacity: 0%;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .about-content a {
-    opacity: 0%;
+    opacity: 0;
+    visibility: hidden;
     box-shadow: 0 0 0px var(--main-color);
 }
 
@@ -50,7 +52,7 @@ body {
 
 .service-box {
     height: 0;
-    color: transparent;
+    visibility: hidden;
 }
 
 /* End Of Gsap Dependencies */

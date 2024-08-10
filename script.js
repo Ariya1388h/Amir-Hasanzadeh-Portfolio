@@ -24,6 +24,7 @@ tl
         stagger: .2,
         duration: .5,
         opacity: '100',
+        visibility: 'visible',
     })
 
     // .to('.home-img img', {
@@ -35,14 +36,13 @@ tl
     // About
 
     .to('.about-content a', {
-        stagger: .2,
-        opacity: '100',
+        opacity: 1,
+        visibility: 'visible',
         boxShadow: '0 0 25px var(--main-color)',  
         scrollTrigger: {
             trigger: '.about-content a',
-            start: "center center",
-            end: "bottom center",
-            scrub: true,
+            start: "-120% center",
+            end: "-120% center",
             markers: true,
             toggleActions: 'play none play none',
           },  
@@ -54,7 +54,7 @@ tl
     .to('.service-box', {
         height: 400,
         backgroundColor: '#0077ff',
-        color: 'black',
+        visibility: 'visible',
         ease: "power4.inOut",
         scrollTrigger: {
             trigger: '.service-box',
