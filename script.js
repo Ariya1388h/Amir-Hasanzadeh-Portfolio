@@ -43,11 +43,12 @@ tl
             start: "center center",
             end: "bottom center",
             scrub: true,
+            markers: true,
             toggleActions: 'play none play none',
           },  
     })
 
-    
+
     // Services
 
     .to('.service-box', {
@@ -60,8 +61,9 @@ tl
             start: "center center",
             end: "bottom center",
             scrub: true,
+            markers: true,
             toggleActions: 'play none play none',
-        },  
+          },   
     })
 
     

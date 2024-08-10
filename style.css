@@ -312,8 +312,8 @@ section {
 }
 
 .service-box:hover {
-    background-color: var(--second-bg-color);
-    color: var(--main-color);
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-color) !important;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
