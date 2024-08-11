@@ -43,6 +43,36 @@ inputs.forEach(input => {
   });
 });
 
+document.querySelectorAll('.about-content p').forEach(p => {
+    const text = p.textContent;
+    p.textContent = ''; // Clear the text initially
+
+    // Split the text into individual characters and wrap each in a span
+    const chars = text.split('').map(char => `<span>${char}</span>`).join('');
+    p.innerHTML = chars;
+
+    const totalDuration = text.length * 0.05; // Adjust the multiplier to control speed
+
+    gsap.fromTo(p.querySelectorAll('span'), {
+      opacity: 0,
+      x: 10
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 0.05, // Shorten duration for each character
+      stagger: {
+        amount: totalDuration, // Total duration for the entire animation
+        from: "start" // Optional: start staggering from the beginning
+      },
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: p,
+        start: 'center center', // Start animation when the element is centered in the viewport
+        toggleActions: 'play none none none' // Play animation on trigger
+      }
+    });
+  });
+
 // GSAP TIMELINE
 
 tl 
@@ -73,25 +103,23 @@ tl
             trigger: '.about-content a',
             start: "-350% center",
             end: "-350% center",
-            markers: true,
             scrub: true,
             toggleActions: 'play none play none',
           },  
     })
 
-    .to('.about-content p', {
-        x: 0,
-        opacity: 1,
-        ease: 'power4.inOut',
-        scrollTrigger: {
-            trigger: '.about-content p',
-            start: "top 150%",
-            end: "bototm center",
-            scrub: true,
-            markers: true,
-            toggleActions: 'play none play none',
-        }, 
-    })
+    // .from('.about-content p', {
+    //     x: '-100vw',
+    //     opacity: .3,
+    //     ease: 'power4.inOut',
+    //     scrollTrigger: {
+    //         trigger: '.about-content p',
+    //         start: "top bottom",
+    //         end: "bottom center",
+    //         scrub: true,
+    //         toggleActions: 'play none play none',
+    //     }, 
+    // })
 
     .to('.service-box', {
         height: 400,
@@ -102,7 +130,6 @@ tl
             start: "-50px center",
             end: "bottom center",
             scrub: true,
-            markers: true,
             toggleActions: 'play none play none',
           },   
     })
@@ -116,7 +143,6 @@ tl
             start: "top 80%",
             end: "bottom center",
             scrub: true,
-            markers: true,
             toggleActions: 'play none play none',
           },  
     })
