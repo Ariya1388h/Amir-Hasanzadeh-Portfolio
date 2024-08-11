@@ -80,12 +80,12 @@ tl
     })
 
     .to('.about-content p', {
-        transform: 'translateX(0)',
+        x: 0,
         opacity: 1,
         ease: 'power4.inOut',
         scrollTrigger: {
             trigger: '.about-content p',
-            start: "top bottom",
+            start: "top 150%",
             end: "bototm center",
             scrub: true,
             markers: true,
